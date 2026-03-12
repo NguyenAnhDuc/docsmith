@@ -85,14 +85,14 @@ Begin the process. Explain that the first step (`audience`) is human-owned, show
 ### `audience` (Human)
 Provide the user with:
 1. Instructions for defining audience and goals (gather existing knowledge, define user goals, identify target users, outline user needs, identify competitors, condense findings into personas and user stories)
-2. The template: [templates/AUDIENCE_PROFILE_TEMPLATE.md](templates/AUDIENCE_PROFILE_TEMPLATE.md)
+2. The template: [../../templates/AUDIENCE_PROFILE_TEMPLATE.md](../../templates/AUDIENCE_PROFILE_TEMPLATE.md)
 3. Ask user to provide the completed profile or answer questions interactively
 
 ### `plan` (AI)
 **Requires**: Completed audience profile
-Read [process-reference.md](process-reference.md) § STEP-002. Use templates:
-- [templates/DOCUMENTATION_PLAN_TEMPLATE.md](templates/DOCUMENTATION_PLAN_TEMPLATE.md)
-- [templates/TRACEABILITY_MATRIX_TEMPLATE.md](templates/TRACEABILITY_MATRIX_TEMPLATE.md)
+Read [process-reference.md](../../process-reference.md) § STEP-002. Use templates:
+- [templates/DOCUMENTATION_PLAN_TEMPLATE.md](../../templates/DOCUMENTATION_PLAN_TEMPLATE.md)
+- [templates/TRACEABILITY_MATRIX_TEMPLATE.md](../../templates/TRACEABILITY_MATRIX_TEMPLATE.md)
 
 ### `review-plan` (Human)
 Present the documentation plan for human review. Explain approval criteria:
@@ -103,27 +103,27 @@ Ask if approved or if feedback is needed (→ re-run `plan` with feedback).
 
 ### `sitemap` (AI)
 **Requires**: Approved documentation plan
-Read [process-reference.md](process-reference.md) § STEP-004. Define folder structure, navigation sidebar, cross-links, and reading order.
+Read [process-reference.md](../../process-reference.md) § STEP-004. Define folder structure, navigation sidebar, cross-links, and reading order.
 
 ### `voice` (AI)
 **Requires**: Approved documentation plan + audience profile
-Read [subprocess-010a.md](subprocess-010a.md). Use templates:
-- [templates/VOICE_CHART_TEMPLATE.md](templates/VOICE_CHART_TEMPLATE.md)
-- [templates/UX_TEXT_PATTERNS_TEMPLATE.md](templates/UX_TEXT_PATTERNS_TEMPLATE.md)
-- [templates/UX_CONTENT_SCORECARD_TEMPLATE.md](templates/UX_CONTENT_SCORECARD_TEMPLATE.md)
+Read [subprocess-010a.md](../../subprocess-010a.md). Use templates:
+- [templates/VOICE_CHART_TEMPLATE.md](../../templates/VOICE_CHART_TEMPLATE.md)
+- [templates/UX_TEXT_PATTERNS_TEMPLATE.md](../../templates/UX_TEXT_PATTERNS_TEMPLATE.md)
+- [templates/UX_CONTENT_SCORECARD_TEMPLATE.md](../../templates/UX_CONTENT_SCORECARD_TEMPLATE.md)
 
 Runs the subprocess: define product principles (ask human) → build voice chart → review (ask human) → define UX text patterns → create content scorecard → approve (ask human).
 
 ### `draft` (AI)
 **Requires**: Approved plan, sitemap, voice chart, UX text patterns
-Read [process-reference.md](process-reference.md) § STEP-005. Use templates from:
-- [templates/CONTENT_TYPE_TEMPLATES.md](templates/CONTENT_TYPE_TEMPLATES.md)
+Read [process-reference.md](../../process-reference.md) § STEP-005. Use templates from:
+- [templates/CONTENT_TYPE_TEMPLATES.md](../../templates/CONTENT_TYPE_TEMPLATES.md)
 
 Draft each document in the plan. Use `![Caption](https://placehold.co/600x400)` for screenshot placeholders.
 
 ### `edit` (AI)
 **Requires**: Draft documents
-Read [process-reference.md](process-reference.md) § STEP-006. Perform 5 editing passes:
+Read [process-reference.md](../../process-reference.md) § STEP-006. Perform 5 editing passes:
 1. Technical accuracy
 2. Completeness
 3. Structure
@@ -132,21 +132,21 @@ Read [process-reference.md](process-reference.md) § STEP-006. Perform 5 editing
 
 ### `walkthrough` (AI) — Full walkthrough
 **Requires**: Edited documents + live product access
-Read [process-reference.md](process-reference.md) § STEP-007 and [tools-reference.md](tools-reference.md). Full workflow:
-1. Create test cases from docs → [templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md](templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md)
+Read [process-reference.md](../../process-reference.md) § STEP-007 and [tools-reference.md](../../tools-reference.md). Full workflow:
+1. Create test cases from docs → [templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md](../../templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md)
 2. Create screenshot capture plan
 3. Execute test cases + capture screenshots in single browser pass
 4. Replace all `placehold.co` placeholders with captured images
 5. Fix any doc failures found
-6. Record results → [templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md](templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md)
+6. Record results → [templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md](../../templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md)
 7. Verify zero `placehold.co` references remain
 
 ### `validate` (AI) — Verification only
 **Requires**: Existing test cases + live product access
 Run existing walkthrough test cases against the live product **without** modifying documentation or capturing screenshots. Purpose: quick re-check after product changes.
 1. Read existing test cases from `docs/walkthrough/test-cases/`
-2. Execute each test case against the live product using [tools-reference.md](tools-reference.md)
-3. Record pass/fail results → [templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md](templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md)
+2. Execute each test case against the live product using [tools-reference.md](../../tools-reference.md)
+3. Record pass/fail results → [templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md](../../templates/WALKTHROUGH_TEST_EXECUTION_TEMPLATE.md)
 4. Report failures with details (expected vs actual) but do NOT auto-fix docs
 5. Recommend next steps for any failures
 
@@ -154,7 +154,7 @@ Run existing walkthrough test cases against the live product **without** modifyi
 **Requires**: Existing documentation
 Extract verifiable claims from documentation and generate test cases. Does NOT execute them.
 1. Scan all docs for verifiable claims (UI labels, navigation paths, URLs, procedures, API behaviors)
-2. Generate test cases → [templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md](templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md)
+2. Generate test cases → [templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md](../../templates/WALKTHROUGH_TEST_CASE_TEMPLATE.md)
 3. Generate screenshot capture plan for any `placehold.co` placeholders
 4. Save to `docs/walkthrough/test-cases/`
 5. Report coverage summary by category
@@ -211,7 +211,7 @@ Explain when technical review is needed (multi-system integrations, unfamiliar d
 
 ### `incorporate` (AI)
 **Requires**: Review feedback
-Read [process-reference.md](process-reference.md) § STEP-010. Process feedback one reviewer at a time, prioritize what helps the user most for contradictions.
+Read [process-reference.md](../../process-reference.md) § STEP-010. Process feedback one reviewer at a time, prioritize what helps the user most for contradictions.
 
 ### `publish` (Human)
 Provide the user with a publication checklist:
