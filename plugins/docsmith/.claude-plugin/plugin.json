@@ -1,0 +1,32 @@
+{
+  "name": "fpt-smartcloud/docsmith",
+  "version": "1.0.0",
+  "description": "Structured documentation creation following PRC-010 process. Audience analysis, planning, UX content standards, drafting, self-review, and product walkthrough verification.",
+  "author": "fpt-smartcloud",
+  "license": "MIT",
+  "repository": "https://github.com/fpt-smartcloud/docsmith",
+  "keywords": [
+    "documentation",
+    "technical-writing",
+    "docs-for-developers",
+    "ux-writing",
+    "content-strategy",
+    "prc-010"
+  ],
+  "categories": [
+    "documentation",
+    "writing",
+    "quality-assurance"
+  ],
+  "skills": [
+    {
+      "name": "docsmith",
+      "path": "SKILL.md",
+      "description": "Documentation creation and verification process"
+    }
+  ],
+  "compatibility": {
+    "claude-code": ">=1.0.0",
+    "agentskills": "1.0"
+  }
+}
