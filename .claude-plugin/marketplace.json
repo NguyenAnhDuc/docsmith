@@ -14,10 +14,7 @@
       "author": {
         "name": "FPT Smart Cloud",
         "email": "support@fptcloud.com"
-      },
-      "skills": [
-        "./SKILL.md"
-      ]
+      }
     }
   ]
 }
