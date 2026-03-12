@@ -14,12 +14,5 @@
     "prc-010",
     "docs-for-developers",
     "ux-writing"
-  ],
-  "skills": [
-    {
-      "name": "docsmith",
-      "path": "SKILL.md",
-      "description": "PRC-010 documentation creation workflow"
-    }
   ]
 }
