@@ -1,29 +1,22 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "nguyenanhduc-docsmith",
-  "version": "1.0.0",
-  "description": "PRC-010 documentation creation workflow for Claude Code",
   "owner": {
     "name": "Duc Nguyen",
-    "email": "nguyenanhduc01120@gmail.com"
+    "email": "nguyenanhduc01120@gmail.com",
+    "url": "https://github.com/NguyenAnhDuc"
   },
   "plugins": [
     {
       "name": "docsmith",
-      "version": "1.0.0",
+      "source": "./plugins/docsmith",
       "description": "PRC-010 documentation creation workflow - Structured docs from audience analysis to publication",
+      "version": "1.0.0",
       "author": {
         "name": "FPT Smart Cloud",
         "email": "support@fptcloud.com"
       },
-      "source": "./plugins/docsmith",
-      "category": "documentation",
-      "keywords": [
-        "documentation",
-        "technical-writing",
-        "prc-010",
-        "docs-for-developers",
-        "ux-writing"
+      "skills": [
+        "./SKILL.md"
       ]
     }
   ]
