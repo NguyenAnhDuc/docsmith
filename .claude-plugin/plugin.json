@@ -1,0 +1,17 @@
+{
+  "name": "docsmith",
+  "version": "1.0.0",
+  "description": "PRC-010 documentation creation workflow - Structured docs from audience analysis to publication",
+  "author": {
+    "name": "FPT Smart Cloud",
+    "email": "support@fptcloud.com"
+  },
+  "repository": "https://github.com/NguyenAnhDuc/docsmith",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "docsmith",
+      "path": "plugins/docsmith/skills/docsmith"
+    }
+  ]
+}
