@@ -14,5 +14,11 @@
     "prc-010",
     "docs-for-developers",
     "ux-writing"
+  ],
+  "skills": [
+    {
+      "name": "docsmith",
+      "path": "skills/docsmith"
+    }
   ]
 }
