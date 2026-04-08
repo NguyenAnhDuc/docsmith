@@ -32,7 +32,7 @@ Based on industry best practices from *Docs for Developers* (Bhatti et al., 2021
 **Claude Code** (recommended):
 ```bash
 /plugin marketplace add https://github.com/NguyenAnhDuc/docsmith.git
-/plugin install docsmith@nguyenanhduc-docsmith
+/plugin install docsmith@bss-docsmith
 /reload-plugins
 ```
 
