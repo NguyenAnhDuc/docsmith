@@ -8,7 +8,7 @@
 
 Based on industry best practices from *Docs for Developers* (Bhatti et al., 2021) and *Strategic Writing for UX* (Podmajersky, 2019).
 
-> 🇻🇳 **Đang adopt Docsmith trong tổ chức của bạn?**
+
 > Xem [Hướng dẫn tiếng Việt cho PO/BA](docs/getting-started-vi.md) — happy path
 > ~30 phút từ PRD/SRS tới user guide hoàn chỉnh.
 
@@ -192,81 +192,3 @@ docs/
 
 ---
 
-## 🏗️ Team Deployment
-
-**For BSS/Engineering teams:**
-
-1. **Add to project repo**:
-   ```bash
-   cd /path/to/your-project
-   mkdir -p .cursor/agents
-   git clone https://github.com/NguyenAnhDuc/docsmith.git .cursor/agents/docsmith
-   git add .cursor/
-   git commit -m "Add DocSmith documentation agent"
-   ```
-
-2. **Team members pull**:
-   ```bash
-   git pull
-   # Cursor auto-detects agent
-   ```
-
-3. **Usage**:
-   ```
-   "Use docsmith to document the new OAuth2 flow"
-   ```
-
----
-
-## 📚 Documentation
-
-- **Process Reference**: [SKILL.md](plugins/docsmith/skills/docsmith/SKILL.md)
-- **Tools Reference**: [tools-reference.md](plugins/docsmith/tools-reference.md)
-- **Publishing Guide**: [PUBLISHING.md](plugins/docsmith/PUBLISHING.md)
-- **Changelog**: [CHANGELOG.md](plugins/docsmith/CHANGELOG.md)
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Please:
-1. Fork the repo
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-## 👤 Author
-
-**Duc Nguyen**  
-- GitHub: [@NguyenAnhDuc](https://github.com/NguyenAnhDuc)
-- Email: nguyenanhduc01120@gmail.com
-
-Based on FPT Smart Cloud PRC-010 documentation standard.
-
----
-
-## 🐛 Support
-
-- **Issues**: [GitHub Issues](https://github.com/NguyenAnhDuc/docsmith/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/NguyenAnhDuc/docsmith/discussions)
-
----
-
-## ⭐ Star History
-
-If you find DocSmith useful, please consider starring the repo!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=NguyenAnhDuc/docsmith&type=Date)](https://star-history.com/#NguyenAnhDuc/docsmith&Date)
-
----
-
-**Built with ❤️ for better documentation**
