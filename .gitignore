@@ -1,0 +1,4 @@
+
+# Local agent state — do not commit
+.claude/
+.omc/

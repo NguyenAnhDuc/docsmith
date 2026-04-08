@@ -8,6 +8,10 @@
 
 Based on industry best practices from *Docs for Developers* (Bhatti et al., 2021) and *Strategic Writing for UX* (Podmajersky, 2019).
 
+> 🇻🇳 **Đang adopt Docsmith trong tổ chức của bạn?**
+> Xem [Hướng dẫn tiếng Việt cho PO/BA](docs/getting-started-vi.md) — happy path
+> ~30 phút từ PRD/SRS tới user guide hoàn chỉnh.
+
 ---
 
 ## ✨ Features
